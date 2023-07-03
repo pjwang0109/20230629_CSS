@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>04 三角形</title>
+
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      main{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      .about, .test {
+        position: relative;
+        margin: 20px 30px;
+        background-color: #e74949;
+        padding: 10px;
+      }
+
+      .test::before{
+        position: absolute;
+        content: '';
+        display: block;
+        background-color: #000;
+        width: 100%;
+        height: 100px;
+        /* top: -100px; */
+        left: 0;
+        clip-path: polygon(8% 80%, 0% 100%, 100% 100%);
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <section class="about">
+        <h2>about</h2>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et
+          exercitationem velit nisi totam a harum animi sit quia nesciunt
+          quibusdam laborum ratione tenetur, vero adipisci dolorem quasi, ab
+          quas. Neque deleniti consequuntur tenetur saepe ipsam ut illo autem
+          quas quidem architecto ratione ducimus laboriosam veritatis temporibus
+          exercitationem a cupiditate voluptatibus corporis ab doloremque, ad
+          aspernatur pariatur eaque? Beatae odio eius delectus recusandae
+          officia ab nihil dolores omnis asperiores! Esse doloremque
+          necessitatibus quidem minima asperiores alias vitae iusto itaque quos,
+          libero repellendus sint nemo quis amet dolores quasi, magnam velit
+          ratione. Cumque itaque tempore neque necessitatibus! Aliquid
+          distinctio quisquam asperiores ut.
+        </p>
+      </section>
+      <section class="test">
+        <h2>test</h2>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et
+          exercitationem velit nisi totam a harum animi sit quia nesciunt
+          quibusdam laborum ratione tenetur, vero adipisci dolorem quasi, ab
+          quas. Neque deleniti consequuntur tenetur saepe ipsam ut illo autem
+          quas quidem architecto ratione ducimus laboriosam veritatis temporibus
+          exercitationem a cupiditate voluptatibus corporis ab doloremque, ad
+          aspernatur pariatur eaque? Beatae odio eius delectus recusandae
+          officia ab nihil dolores omnis asperiores! Esse doloremque
+          necessitatibus quidem minima asperiores alias vitae iusto itaque quos,
+          libero repellendus sint nemo quis amet dolores quasi, magnam velit
+          ratione. Cumque itaque tempore neque necessitatibus! Aliquid
+          distinctio quisquam asperiores ut.
+        </p>
+      </section>
+    </main>
+  </body>
+</html>
